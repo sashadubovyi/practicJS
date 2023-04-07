@@ -107,3 +107,20 @@
 // console.log(countVowel("HELLO WORLD")) // 3
 // console.log(countVowel("Junior Web Developer")) // 8
 // console.log(countVowel("knowlage is a power")) // 7
+
+//=================homework
+// function splitMessage(message, delimiter) {
+//   let words;
+//   // Change code below this line
+//   words = message.split(delimiter);
+//   // Change code above this line
+//   return words;
+// }
+
+function slugify(title) {
+
+    const slug = title.toLowerCase().replace(/\s+/g, '-');
+    console.log(slug);
+}
+
+slugify("How to become a JUNIOR developer in TWO WEEKS")

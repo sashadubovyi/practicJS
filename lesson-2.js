@@ -117,10 +117,32 @@
 //   return words;
 // }
 
-function slugify(title) {
+// function slugify(title) {
 
-    const slug = title.toLowerCase().replace(/\s+/g, '-');
-    console.log(slug);
-}
+//     const slug = title.toLowerCase().replace(/\s+/g, '-');
+//     const slug = title.toLowerCase().split(' ').join('-')
+//     console.log(slug);
+// }
 
-slugify("How to become a JUNIOR developer in TWO WEEKS")
+// slugify("How to become a JUNIOR developer in TWO WEEKS")
+
+//==============
+
+// Виконай базові операції над масивом. Після кожної дії робити console.log щоб слідкувати як змінюється масив.
+// Створіть масив products1 з елементами «apple», «orange» і «melon».
+// Додайте «pear» до кінця.
+// Виведіть у консоль довжина масиву
+// Виведіть у консоль перший елемент масиву.
+// Виведіть у консоль останній елемент масиву. Код повинен працювати для масиву довільної довжини.
+// Видаліть перший елемент та виведіть його в консоль.
+// Видаліть останній елемент та виведіть його в консоль.
+// Вставте «cherry» та «lemon» на початок масиву.
+// Замініть «lemon» на «grapes»
+// Видаліть «orange» з масиву products1
+// Об'єднайте масив products1 з масивом products2 = ["melon", "watermelon", "pineapple"];
+// Видаліть дублікати з новоствореного масива (products3)
+// Обріж новостворений масив без дублікатів (products3NoDubs) від першого до третього елемента
+// Створіть новий масив products4 = ["grapes", "pineapple", "cherry"] і зробіть його копію у змінну products4Copy
+
+// Чи рівні між собою products4 і products4Copy? Чому? Якщо додати новий елемент у products4 чи додасться він у products4Copy?
+

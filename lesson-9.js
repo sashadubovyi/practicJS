@@ -155,41 +155,41 @@
 // Якщо користувач натиснув ESC також закривай модалку
 // refs
 
-const backdropRef = document.querySelector(".js-backdrop");
-const openBtnRef = document.querySelector(".js-modal-open");
-const closeBtnRef = document.querySelector(".js-modal-close");
+// const backdropRef = document.querySelector(".js-backdrop");
+// const openBtnRef = document.querySelector(".js-modal-open");
+// const closeBtnRef = document.querySelector(".js-modal-close");
 
-// відкриття модалки
-const handleOpenClick = () => {
-    backdropRef.classList.add('is-open');
-    closeBtnRef.addEventListener('click', handleClose);
-    openBtnRef.removeEventListener('click', handleOpenClick);
-    document.addEventListener('keyup', onEscPress);
-    backdropRef.addEventListener('click', handleCloseBackdrop);
-};
-openBtnRef.addEventListener('click', handleOpenClick);
+// // відкриття модалки
+// const handleOpenClick = () => {
+//     backdropRef.classList.add('is-open');
+//     closeBtnRef.addEventListener('click', handleClose);
+//     openBtnRef.removeEventListener('click', handleOpenClick);
+//     document.addEventListener('keyup', onEscPress);
+//     backdropRef.addEventListener('click', handleCloseBackdrop);
+// };
+// openBtnRef.addEventListener('click', handleOpenClick);
 
-// закриття модалки
-const handleClose = () => { 
-    backdropRef.classList.remove('is-open');
-    closeBtnRef.removeEventListener('click', handleClose);
-    openBtnRef.addEventListener('click', handleOpenClick);
-    document.removeEventListener('keyup', onEscPress);
-    backdropRef.removeEventListener('click', handleCloseBackdrop);
-};
-closeBtnRef.addEventListener('click', handleClose);
-
-
-const onEscPress = (e) => { 
-    if (e.code === 'Escape') { 
-        handleClose()
-    }
-};
+// // закриття модалки
+// const handleClose = () => { 
+//     backdropRef.classList.remove('is-open');
+//     closeBtnRef.removeEventListener('click', handleClose);
+//     openBtnRef.addEventListener('click', handleOpenClick);
+//     document.removeEventListener('keyup', onEscPress);
+//     backdropRef.removeEventListener('click', handleCloseBackdrop);
+// };
+// closeBtnRef.addEventListener('click', handleClose);
 
 
-function handleCloseBackdrop(e) {
-    if (e.target.classList.contains('backdrop')) {
-        handleClose();
-    }
-}
-backdropRef.addEventListener('click', handleCloseBackdrop);
+// const onEscPress = (e) => { 
+//     if (e.code === 'Escape') { 
+//         handleClose()
+//     }
+// };
+
+
+// function handleCloseBackdrop(e) {
+//     if (e.target.classList.contains('backdrop')) {
+//         handleClose();
+//     }
+// }
+// backdropRef.addEventListener('click', handleCloseBackdrop);
